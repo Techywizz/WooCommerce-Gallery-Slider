@@ -1,0 +1,58 @@
+.woocommerce-product-gallery {
+    display: flex;
+}
+
+/* Thumbnails at the bottom */
+.woocommerce-product-gallery {
+    flex-flow: column;
+}
+
+#product-thumbnails {
+    order: 5;
+    position: relative;
+    margin-top: 4px;
+}
+
+.woocommerce-product-gallery__image > img {
+    cursor: pointer;
+}
+
+/* Carousel navigation */
+.flex-direction-nav {
+    list-style-type: none;
+    margin: 0;
+}
+
+.flex-direction-nav > li > a {
+    font-size: 0;
+    position: absolute;
+    top: 41%;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 10px;
+}
+
+.flex-direction-nav .flex-next {
+    right: 10px;
+}
+
+.flex-direction-nav .flex-prev:after,
+.flex-direction-nav .flex-next:after {
+    font-family: 'Font Awesome 5 Free', 'FontAwesome'; /* Fallback to font awesome 4 */
+    color: #fff;
+    font-size: 20px;
+}
+
+.flex-direction-nav .flex-prev:after {
+    content: '\f053';
+}
+
+.flex-direction-nav .flex-next:after {
+    content: '\f054';
+}
+
+/* Hide nav arrows if it is disabled */
+.flex-direction-nav .flex-disabled {
+    display: none;
+}
